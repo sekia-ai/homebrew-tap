@@ -11,7 +11,7 @@ class Sekia < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sekia-ai/sekia/releases/download/v0.0.4/sekia_0.0.4_darwin_amd64.tar.gz"
-      sha256 "f2c0a784a1a015be67f3f1293e294c3c85f663fc71239f28919002f59dab33fd"
+      sha256 "016ecd63d75cbefead87413314ee01cc4c0f4f1f5925b1b2e08df75d79c2169a"
 
       def install
         bin.install "sekiad"
@@ -25,7 +25,7 @@ class Sekia < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sekia-ai/sekia/releases/download/v0.0.4/sekia_0.0.4_darwin_arm64.tar.gz"
-      sha256 "1e18aa67c0a341d23d494af29c35bc35f286705dca4923b00447811979205200"
+      sha256 "91d7594799b3b294f1e7265c4553b3cf36d0aea3d0014101af388e06b3a8fdb8"
 
       def install
         bin.install "sekiad"
@@ -42,7 +42,7 @@ class Sekia < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sekia-ai/sekia/releases/download/v0.0.4/sekia_0.0.4_linux_amd64.tar.gz"
-      sha256 "a448de51ef1beb52dd6ccbf385ff3bd3eb7f9614083d3932db5d0468d1c7f83f"
+      sha256 "2d5ee40f5a7abd81dec8ed0f9b3f8e35a41990e6fba36301ebd68a7953956520"
       def install
         bin.install "sekiad"
         bin.install "sekiactl"
@@ -55,7 +55,7 @@ class Sekia < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sekia-ai/sekia/releases/download/v0.0.4/sekia_0.0.4_linux_arm64.tar.gz"
-      sha256 "479a67c012904c446c4336d9b2c8dd24308df3285b809fc61218e057197ef9d6"
+      sha256 "9401213afdbb30af62649301e88d2bb2bbc7a72ff444e932d38e69bdbfd9b596"
       def install
         bin.install "sekiad"
         bin.install "sekiactl"
