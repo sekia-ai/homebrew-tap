@@ -5,13 +5,13 @@
 class Sekia < Formula
   desc "Multi-agent event bus for workflow automation"
   homepage "https://github.com/sekia-ai/sekia"
-  version "0.0.9"
+  version "0.0.10"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.9/sekia_0.0.9_darwin_amd64.tar.gz"
-      sha256 "0d309615d8263ebc8056a24ccce92ff32043e398a9bf1a9523eda5fe0d8b6413"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.10/sekia_0.0.10_darwin_amd64.tar.gz"
+      sha256 "d8129da2e3f5261115d4cd5b0b1676accc4c32004b56abdb3ba695eac4100436"
 
       def install
         bin.install "sekiad"
@@ -19,13 +19,13 @@ class Sekia < Formula
         bin.install "sekia-github"
         bin.install "sekia-slack"
         bin.install "sekia-linear"
-        bin.install "sekia-gmail"
+        bin.install "sekia-google"
         bin.install "sekia-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.9/sekia_0.0.9_darwin_arm64.tar.gz"
-      sha256 "c5533aa7dd97c87c775bd588225a0ea2a23612dadb2320b02983849792f5b8b8"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.10/sekia_0.0.10_darwin_arm64.tar.gz"
+      sha256 "9057557fc3965011c89d6f5f58d6d3dfc9ee087250b091fcced446a62a12840d"
 
       def install
         bin.install "sekiad"
@@ -33,7 +33,7 @@ class Sekia < Formula
         bin.install "sekia-github"
         bin.install "sekia-slack"
         bin.install "sekia-linear"
-        bin.install "sekia-gmail"
+        bin.install "sekia-google"
         bin.install "sekia-mcp"
       end
     end
@@ -41,28 +41,28 @@ class Sekia < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.9/sekia_0.0.9_linux_amd64.tar.gz"
-      sha256 "fd852731d7f541a0ea893d4d82873a67052462e9aa492b4dd83dc8ea55c6efdc"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.10/sekia_0.0.10_linux_amd64.tar.gz"
+      sha256 "9353335336f82a89af2dcc8b361fadfda24019819726b97779ff653d76d212d9"
       def install
         bin.install "sekiad"
         bin.install "sekiactl"
         bin.install "sekia-github"
         bin.install "sekia-slack"
         bin.install "sekia-linear"
-        bin.install "sekia-gmail"
+        bin.install "sekia-google"
         bin.install "sekia-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.9/sekia_0.0.9_linux_arm64.tar.gz"
-      sha256 "28cd97175cb41b28ff464a8f9dec69959a354d21558cd17b8c3c096f00f5c07d"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.0.10/sekia_0.0.10_linux_arm64.tar.gz"
+      sha256 "23d2544c68bd8f26ab9467094d9292a7cc57d9e49f9ef7fa71fb7ac5f48af961"
       def install
         bin.install "sekiad"
         bin.install "sekiactl"
         bin.install "sekia-github"
         bin.install "sekia-slack"
         bin.install "sekia-linear"
-        bin.install "sekia-gmail"
+        bin.install "sekia-google"
         bin.install "sekia-mcp"
       end
     end
