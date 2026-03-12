@@ -5,23 +5,23 @@
 class SekiaMcp < Formula
   desc "sekia MCP server - Model Context Protocol adapter"
   homepage "https://github.com/sekia-ai/sekia"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   depends_on "sekia-ai/tap/sekia"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.3/sekia-mcp_0.1.3_darwin_amd64.tar.gz"
-      sha256 "589748319a41ddbcfcfa8a320f72cb15eb1ef11ab138849ae9163554f4dac767"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.4/sekia-mcp_0.1.4_darwin_amd64.tar.gz"
+      sha256 "fa9d65175781e724e33a8f73945700065e0fd94a8563c3a9a2ef7e2b242ad1f2"
 
       define_method(:install) do
         bin.install "sekia-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.3/sekia-mcp_0.1.3_darwin_arm64.tar.gz"
-      sha256 "8c2075924ca1ee04489b8a7688cde6d77f49d909ba78663b295b3b5716f9ca4e"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.4/sekia-mcp_0.1.4_darwin_arm64.tar.gz"
+      sha256 "5152f96f8304db684437be4fb3a1b08b3bea156c7215cb7a5f16777ede688c31"
 
       define_method(:install) do
         bin.install "sekia-mcp"
@@ -31,15 +31,15 @@ class SekiaMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.3/sekia-mcp_0.1.3_linux_amd64.tar.gz"
-      sha256 "f9c97bf01ddcedcbd8d4acb272fe90f875d91f940f7afc0becac33f39b4bb636"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.4/sekia-mcp_0.1.4_linux_amd64.tar.gz"
+      sha256 "4c3a3398e167ae6f79d2faa12acf48fd8b18f220a5737161686097786811d4ac"
       define_method(:install) do
         bin.install "sekia-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.3/sekia-mcp_0.1.3_linux_arm64.tar.gz"
-      sha256 "a9690a3026bba1775639156a8e4899b0b7a6721891087751cdac12b5ccef5fdf"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.4/sekia-mcp_0.1.4_linux_arm64.tar.gz"
+      sha256 "b6ea934d7acaa548d966f80ea9456dc254e4f6e879565d7942ea33b3e63c56a9"
       define_method(:install) do
         bin.install "sekia-mcp"
       end
