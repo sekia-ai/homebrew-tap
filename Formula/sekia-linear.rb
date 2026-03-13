@@ -5,23 +5,23 @@
 class SekiaLinear < Formula
   desc "sekia Linear agent - GraphQL polling bridge"
   homepage "https://github.com/sekia-ai/sekia"
-  version "0.1.5"
+  version "0.1.6"
   license "Apache-2.0"
 
   depends_on "sekia-ai/tap/sekia"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia-linear_0.1.5_darwin_amd64.tar.gz"
-      sha256 "81c0133bea7b8d1418de55eb74ae7ad27a2a9865b57a7785a78ad5801eccd7c9"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia-linear_0.1.6_darwin_amd64.tar.gz"
+      sha256 "86b72cf2157b25b3df5e73a323a24cf7fd746b779139f67029157f5afed48e35"
 
       define_method(:install) do
         bin.install "sekia-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia-linear_0.1.5_darwin_arm64.tar.gz"
-      sha256 "1767a0d9a920add4038e01fd41b7c60322d70bd6f25c6a7e961817f85596a395"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia-linear_0.1.6_darwin_arm64.tar.gz"
+      sha256 "174c2155cb21c46f07d17b6d91ed4790edd9f93121796d9681958872c7864c1f"
 
       define_method(:install) do
         bin.install "sekia-linear"
@@ -31,15 +31,15 @@ class SekiaLinear < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia-linear_0.1.5_linux_amd64.tar.gz"
-      sha256 "706b41bcc6f78ffc80f7617aaf6f4533680c43171f8bffcc795937c6644c4a46"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia-linear_0.1.6_linux_amd64.tar.gz"
+      sha256 "9e71f191db34a5a588b44f8308fcc566dd8b87ab82474828c1355ace0fbdb40f"
       define_method(:install) do
         bin.install "sekia-linear"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia-linear_0.1.5_linux_arm64.tar.gz"
-      sha256 "7a4d4aa523356471996141fc6639ac14a149ca2144a8da9a6dc135916fb15845"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia-linear_0.1.6_linux_arm64.tar.gz"
+      sha256 "45cc9887c020c01b839c9b596d4975a05f2952babee36069238ccd1d5b4a35e3"
       define_method(:install) do
         bin.install "sekia-linear"
       end
