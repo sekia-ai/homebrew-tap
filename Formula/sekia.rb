@@ -5,13 +5,13 @@
 class Sekia < Formula
   desc "Multi-agent event bus - daemon and CLI"
   homepage "https://github.com/sekia-ai/sekia"
-  version "0.1.5"
+  version "0.1.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia_0.1.5_darwin_amd64.tar.gz"
-      sha256 "da7b9cebedda4fef9eb3786aa5c5a45d839641854324d59c37525e5dc5553ced"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia_0.1.6_darwin_amd64.tar.gz"
+      sha256 "94aeb4187b8e6b3564ef3a7e8ad816341e54df3e893c09ce99695b375a14950f"
 
       define_method(:install) do
         bin.install "sekiad"
@@ -19,8 +19,8 @@ class Sekia < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia_0.1.5_darwin_arm64.tar.gz"
-      sha256 "a1188b77a3f71f799810950856596f2866a803c05e6fb263b93356a6b00c25c1"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia_0.1.6_darwin_arm64.tar.gz"
+      sha256 "a8a4d242df7c8ba84f9f2d28f9f5f3666f597e6c27eaf03ce6d8c1061101d372"
 
       define_method(:install) do
         bin.install "sekiad"
@@ -31,16 +31,16 @@ class Sekia < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia_0.1.5_linux_amd64.tar.gz"
-      sha256 "1f28245c0c724ab8b6fd31ad7b0fc6ebb1c45467eb39ab481d181aca522a7aad"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia_0.1.6_linux_amd64.tar.gz"
+      sha256 "328fcb08e6bced51b22c93cf7e29861d255f37ba0d7e3512585dbafba4467cb5"
       define_method(:install) do
         bin.install "sekiad"
         bin.install "sekiactl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.5/sekia_0.1.5_linux_arm64.tar.gz"
-      sha256 "f6d92e62084f9d3cfe24554b326dbe52394bda6fd07cc270d72efbd069947cf1"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.1.6/sekia_0.1.6_linux_arm64.tar.gz"
+      sha256 "be5334a9f1b44455fe95ece2ad1e5d69fbef12979905d9b6214aadae2689dc98"
       define_method(:install) do
         bin.install "sekiad"
         bin.install "sekiactl"
