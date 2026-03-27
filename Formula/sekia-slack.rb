@@ -5,23 +5,23 @@
 class SekiaSlack < Formula
   desc "sekia Slack agent - Socket Mode bridge"
   homepage "https://github.com/sekia-ai/sekia"
-  version "0.2.1"
+  version "0.2.2"
   license "Apache-2.0"
 
   depends_on "sekia-ai/tap/sekia"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.1/sekia-slack_0.2.1_darwin_amd64.tar.gz"
-      sha256 "26eae1175370ea7cbbb090dd19f941ed8e1e4f095db0cb2945147137cca83f48"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-slack_0.2.2_darwin_amd64.tar.gz"
+      sha256 "fcce1f6a0a00daace84698954fa7e554c229cdb30c0d261f7a9466000c73e4fb"
 
       define_method(:install) do
         bin.install "sekia-slack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.1/sekia-slack_0.2.1_darwin_arm64.tar.gz"
-      sha256 "33a9839ce307d0a874aeb0263e819eec37e0ee25442bea36803b79fd0bab33b2"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-slack_0.2.2_darwin_arm64.tar.gz"
+      sha256 "663baac93cb278c343bd09d37b9cdbcc8712a3ebb7ea73f0eabf56c47a41f592"
 
       define_method(:install) do
         bin.install "sekia-slack"
@@ -31,15 +31,15 @@ class SekiaSlack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.1/sekia-slack_0.2.1_linux_amd64.tar.gz"
-      sha256 "bd4709f3c269e2bbfa58044975ad0d69fb0e24abdcc232d43e63122ea55c08f5"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-slack_0.2.2_linux_amd64.tar.gz"
+      sha256 "ae7fa4b75c8ad8536cd5d644a073d86d304e364d903290c09156f2d5172d685e"
       define_method(:install) do
         bin.install "sekia-slack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.1/sekia-slack_0.2.1_linux_arm64.tar.gz"
-      sha256 "cb9d18f5c3b0d68b23279bfe2277991109d93add850748be36d1e637a6111688"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-slack_0.2.2_linux_arm64.tar.gz"
+      sha256 "ce1b32c9205b9a76a6e528489432626c3a6b94a10b6b3b397b9f6459e7b34017"
       define_method(:install) do
         bin.install "sekia-slack"
       end
