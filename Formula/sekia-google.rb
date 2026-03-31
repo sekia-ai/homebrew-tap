@@ -5,23 +5,23 @@
 class SekiaGoogle < Formula
   desc "sekia Google agent - Gmail and Calendar bridge"
   homepage "https://github.com/sekia-ai/sekia"
-  version "0.2.2"
+  version "0.2.3"
   license "Apache-2.0"
 
   depends_on "sekia-ai/tap/sekia"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-google_0.2.2_darwin_amd64.tar.gz"
-      sha256 "07949c0392bf7cb08a25c0163fe9effc2cad91c53965f027c00f4c50a79d397d"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.3/sekia-google_0.2.3_darwin_amd64.tar.gz"
+      sha256 "81c343164cfa1d3037299a6b94afe891fa0923e7bb01ed16852cec46581dd40a"
 
       define_method(:install) do
         bin.install "sekia-google"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-google_0.2.2_darwin_arm64.tar.gz"
-      sha256 "c86c3268f7b372ee5e96b37262f69e363ebd8124c36fdb4e2fdac58a5b9d939b"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.3/sekia-google_0.2.3_darwin_arm64.tar.gz"
+      sha256 "48061344391d59729e33ea30743610a0c7526cfa7c8bf498ed83eaa45efcaf9f"
 
       define_method(:install) do
         bin.install "sekia-google"
@@ -31,15 +31,15 @@ class SekiaGoogle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-google_0.2.2_linux_amd64.tar.gz"
-      sha256 "4defc24b05faf7fbf063430c059760e5a309e5cc5b050e2da089fb8f705f218f"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.3/sekia-google_0.2.3_linux_amd64.tar.gz"
+      sha256 "5af3fae0e558a6dbd717b80df8a3781dbfd8ea3b7bffb737387080a686857a9a"
       define_method(:install) do
         bin.install "sekia-google"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.2/sekia-google_0.2.2_linux_arm64.tar.gz"
-      sha256 "c8258a5267890025e3224f85533b759d5ccf875aa0047af483cfec2e05baede1"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.2.3/sekia-google_0.2.3_linux_arm64.tar.gz"
+      sha256 "04c824a86188e750d9bfa66247bfea80d0ef26490108f4c663ee9af72bd388af"
       define_method(:install) do
         bin.install "sekia-google"
       end
