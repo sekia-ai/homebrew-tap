@@ -5,23 +5,23 @@
 class SekiaGithub < Formula
   desc "sekia GitHub agent - webhook and polling bridge"
   homepage "https://github.com/sekia-ai/sekia"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   depends_on "sekia-ai/tap/sekia"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.0/sekia-github_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d98c77385d39baf51918dbe558d9750a019e2c3e4839fabf0b83f9bb8c4bbe33"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.1/sekia-github_0.3.1_darwin_amd64.tar.gz"
+      sha256 "2948b7c88922b0cafa87176717f739a823954279cbe0cfca229f8d5f1495b337"
 
       define_method(:install) do
         bin.install "sekia-github"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.0/sekia-github_0.3.0_darwin_arm64.tar.gz"
-      sha256 "95d49f10c3adec80f7a2d0e8e3b6ba9aeff974cb8e95740a2f7da2df354e932d"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.1/sekia-github_0.3.1_darwin_arm64.tar.gz"
+      sha256 "941def7f89c34f5b8f455869359aeb3eb74c7f340d1fb10a9b89b6f5fef4657e"
 
       define_method(:install) do
         bin.install "sekia-github"
@@ -31,15 +31,15 @@ class SekiaGithub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.0/sekia-github_0.3.0_linux_amd64.tar.gz"
-      sha256 "446738d8529b2b2834796276200c0a60138d27c4865a36fbc1acb9e7e5ef0e3d"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.1/sekia-github_0.3.1_linux_amd64.tar.gz"
+      sha256 "cfd04e9ba70f3a8c10260d288e326ae575585fb1cd33668e170b575b0b63564c"
       define_method(:install) do
         bin.install "sekia-github"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.0/sekia-github_0.3.0_linux_arm64.tar.gz"
-      sha256 "aad3c4cf3c4ae93e48b0d169e0f2ffa573090419eb73d0124bf365a80d270488"
+      url "https://github.com/sekia-ai/sekia/releases/download/v0.3.1/sekia-github_0.3.1_linux_arm64.tar.gz"
+      sha256 "a8b537958ec5fd7c713c32d360be82e9903a24e04865ac3c23e4ea0a6f2e2b25"
       define_method(:install) do
         bin.install "sekia-github"
       end
